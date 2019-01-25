@@ -1,0 +1,22 @@
+package com.packt.searchapp.exceptions;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+/**
+ * @author Hincu Andrei (andreih1981@gmail.com)on 18.01.2019.
+ * @version $Id$.
+ * @since 0.1.
+ */
+public class NotFoundException extends PetStoreException {
+    private Long id;
+    public NotFoundException(String message, Long id) {
+        super(message, id);
+        this.id = id;
+    }
+    public Long getId() {
+        return this.id;
+    }
+}
