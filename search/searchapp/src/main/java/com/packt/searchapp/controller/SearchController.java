@@ -28,8 +28,8 @@ public class SearchController {
         this.topicRepository = topicRepository;
     }
 
-    @RequestMapping("/topics")
-    public ResponseEntity<List<Topic>> searchTopic(@RequestParam("searchString") String searchString) {
+    @GetMapping("/topics")
+    public ResponseEntity<List<Topic>> searchTopic(@RequestParam(value = "searchString", required = false) String searchString) {
        // return topicRepository.findByDescriptionLikeIgnoreCase("%spring%");
         return ResponseEntity.ok(topicRepository.findByAttributeContainsText("description", searchString));
     }
