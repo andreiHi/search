@@ -15,7 +15,7 @@ import java.util.stream.DoubleStream;
  */
 public interface PetService {
 
-    List<Pet>findAll();
+    List<Pet> findAll();
 
     Optional<Pet> findById(Long id);
 

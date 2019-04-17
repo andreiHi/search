@@ -35,7 +35,7 @@ public class SearchController {
     }
 
     @GetMapping(value = "/topics/{id}")
-    public ResponseEntity<Topic>searchTopics(@PathVariable Long id) {
+    public ResponseEntity<Topic> searchTopics(@PathVariable Long id) {
         return this.topicRepository.findById(id).map(ResponseEntity::ok)
                 .orElseThrow(() -> new EntityNotFoundException(String.format("Topic with id = %s not found", id)));
     }
@@ -66,7 +66,7 @@ public class SearchController {
 
     @DeleteMapping("/topic/{id}")
     public ResponseEntity<?> deleteTopic(@PathVariable Long id) {
-        return this.topicRepository.findById(id).map(c ->{
+        return this.topicRepository.findById(id).map(c -> {
             topicRepository.delete(c);
             return ResponseEntity.noContent().build();
         }).orElseThrow(() -> new EntityNotFoundException(String.format("Topic with id = %s not found", id)));

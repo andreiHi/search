@@ -88,13 +88,23 @@ public class Topic implements Serializable {
 
     @Override
     public String toString() {
-        return "Topic{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", textField1='" + textField1 + '\'' +
-                ", textField2='" + textField2 + '\'' +
-                ", created=" + created +
-                '}';
+        return "Topic{"
+                + "id="
+                + id
+                + ", name='"
+                + name
+                + '\''
+                + ", description='"
+                + description
+                + '\''
+                + ", textField1='"
+                + textField1
+                + '\''
+                + ", textField2='"
+                + textField2
+                + '\''
+                + ", created="
+                + created
+                + '}';
     }
 }

@@ -67,12 +67,19 @@ public class Pet {
 
     @Override
     public String toString() {
-        return "Pet{" +
-                "id=" + id +
-                ", cost=" + cost +
-                ", numberInStock=" + numberInStock +
-                ", itemName='" + itemName + '\'' +
-                ", pictureUrl='" + pictureUrl + '\'' +
-                '}';
+        return "Pet{"
+                + "id="
+                + id
+                + ", cost="
+                + cost
+                + ", numberInStock="
+                + numberInStock
+                + ", itemName='"
+                + itemName
+                + '\''
+                + ", pictureUrl='"
+                + pictureUrl
+                + '\''
+                + '}';
     }
 }

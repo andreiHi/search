@@ -84,7 +84,7 @@
         <!--<module name="DesignForExtension"/>-->
         <!--<module name="FinalClass"/>-->
         <!--<module name="HideUtilityClassConstructor"/>-->
-        <module name="InterfaceIsType"/>
+        <!--<module name="InterfaceIsType"/>-->
 
         <!-- Miscellaneous other checks.                   -->
         <!-- See http://checkstyle.sf.net/config_misc.html -->

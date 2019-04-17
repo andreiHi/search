@@ -11,7 +11,7 @@ import java.util.Optional;
  * @since 0.1.
  */
 public interface UserService {
-    Optional<User>findById(Long id);
+    Optional<User> findById(Long id);
 
     User save(User user);
 

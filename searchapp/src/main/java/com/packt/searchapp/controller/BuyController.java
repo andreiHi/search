@@ -35,7 +35,7 @@ public class BuyController {
     }
 
     @PostMapping("/buy/{petId}")
-    public ResponseEntity<Pet>buyPet(@PathVariable("petId")Long petId, @RequestParam("userId") Long userId) {
+    public ResponseEntity<Pet> buyPet(@PathVariable("petId")Long petId, @RequestParam("userId") Long userId) {
         ResponseEntity<Pet> build = ResponseEntity.badRequest().build();
         if (userId == null || userId == 0) {
             return build;
